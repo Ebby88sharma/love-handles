@@ -27,6 +27,7 @@ def get_sales_data():
         if validate_date(sales_data):
             print("data is valid")
             break
+    return sales_data
 
 def validate_date(values):
     """
@@ -44,4 +45,5 @@ def validate_date(values):
                 print(f"Invalid data: {e}, please try again.\n")
                 return False
     return True
-get_sales_data()
+
+data = get_sales_data()
